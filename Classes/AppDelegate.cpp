@@ -27,6 +27,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //TestActionµÄscene
     //CCScene *pScene = TestAction::scene();
 	
+	
 	//TestLyaerµÄscene
 	CCScene *pScene = TestLayer::scene();
     // run

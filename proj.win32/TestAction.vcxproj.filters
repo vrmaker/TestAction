@@ -18,6 +18,9 @@
     <ClCompile Include="..\Classes\TestActionScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="TestLayerScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -27,6 +30,9 @@
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\TestActionScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="TestLayerScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>

@@ -85,11 +85,20 @@ void TestAction::onEnter()
 {
 	CCLayer::onEnter();
 
+	//Æ½ÒÆ
 	CCSize size = CCDirector::sharedDirector()->getWinSize();
 	CCActionInterval* actionTo = CCMoveTo::create(2,ccp(size.width/2,size.height/2));
 	CCActionInterval* actionBy = CCMoveBy::create(2,ccp(10,10));
 
 	m_sprite1->runAction(actionTo);
+
+	//°´Ë³ÐòÐý×ª
+	CCActionInterval* actionBy2 = CCRotateBy::create(2,360);
+	CCActionInterval* actionBack = actionBy2->reverse();
+
+	m_sprite2->runAction(CCSequence::create(actionBy2,actionBack,NULL));
+
+	
 	
 }
 void TestAction::menuCloseCallback(CCObject* pSender)
